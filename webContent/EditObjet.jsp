@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <title>
-    Details objet
+    Modifier un objet
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -34,7 +34,7 @@
     }
   </style>
 </head>
-<body class="g-sidenav-show  bg-gray-100" >
+<body class="g-sidenav-show  bg-gray-100">
 
 <%@ include file='navbar.jsp' %>
  <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
@@ -44,9 +44,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Voir details</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Modifier votre objet</li>
           </ol>
-          <h6 class="font-weight-bolder mb-0">Voir details</h6>
+          <h6 class="font-weight-bolder mb-0">Modifier votre objet</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -154,36 +154,63 @@
       </div>
     </nav>
     <!-- End Navbar -->
-     <div class="container-fluid py-4">
-   <div class="row mt-4" style="min-height:430px">
-        <div class="col-lg-9 mb-lg-0 mb-4" style=" display: block;margin-left: auto; margin-right: auto">
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-md-7 mt-4" style=" display: block;margin-left: auto; margin-right: auto">
           <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-column h-100">
-                   
-                    <h5 class="font-weight-bolder">Nom</h5>
-                    <p class="mb-3">description: From colors, cards, typography to complex elements, you will find the full documentation.</p>
-                    <p class="mb-1  text-bold" style="background-color:#e7ad64; border-radius:20px; text-align:center;color:white">#Echange</p>
-                    <p style="font-size:18px"><i class="fas fa-map-marker-alt" style="color:#59876f" ></i> adresse</p>
+            <div class="card-header pb-0 px-3">
+              <h6 class="mb-0">Modifier un objet</h6>
+            </div>
+            <div class="card-body pt-4 p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
+                  <div >
+                    <h6 class="mb-3 text-sm">Nom de l'objet</h6>
                     
+ 					<input  type="text"  style=" width:400px ;border-radius:8px;  border: 1px solid #67748e; " >                   
+               
                   </div>
-                </div>
-                <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
-                  <div class="bg-gradient-primary border-radius-lg h-100">
-                    <img src="assets/img/shapes/waves-white.svg" class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
-                    <div class="position-relative d-flex align-items-center justify-content-center h-100">
-                      <img class="w-100 position-relative z-index-2 pt-4" src="assets/img/illustrations/rocket-white.png" alt="rocket">
-                    </div>
+              
+                </li>
+                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                     <h6 class="mb-3 text-sm">Importez une image de l'objet</h6>
+ 					<input  type="file"  style=" width:400px ;border-radius:8px;  border: 1px solid #67748e; " >                   
+               
                   </div>
-                </div>
-              </div>
+                 
+                </li>
+                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Desciption de l'objet</h6>
+ 					<input  type="text"  style=" width:400px ;border-radius:8px;  border: 1px solid #67748e; " >  
+                  </div>
+                </li>
+                 <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Adresse</h6>
+ 					<input  type="text"  style=" width:400px ;border-radius:8px;  border: 1px solid #67748e; " >  
+                  </div>
+                </li>
+                 <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Cet objet est destiné au don ou à l'échange?</h6>
+ 					<input  type="text"  style=" width:400px ;border-radius:8px;  border: 1px solid #67748e; " >  
+                  </div>
+                </li>
+                 <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div style=" display: block;margin-left: auto; margin-right: auto">
+ 					
+ 					 <input  type="submit" id="flexSwitchCheckDefault4" style="min-width:200px" class="submit" value="Modifier">
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      
-    </div>
+   
+      </div>
+     
      
    <%@ include file="footer.jsp" %>
   </div>

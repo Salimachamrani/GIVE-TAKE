@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <title>
-    Details objet
+    Details service
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -32,6 +32,7 @@
     .submit:hover{
       background-color: #690465;
     }
+
   </style>
 </head>
 <body class="g-sidenav-show  bg-gray-100" >
@@ -182,8 +183,59 @@
             </div>
           </div>
         </div>
+        <div class="col-md-12 mb-lg-0 mb-4">
+              <div class="card mt-4">
+                <div class="card-header pb-0 p-3">
+                  <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                      <h6 class="mb-0">Commenter</h6>
+                    </div>
+                    <div class="col-6 text-end">
+                      <a class="btn bg-gradient-dark mb-0" href="javascript:;"><i class="fas fa-plus"></i>&nbsp;&nbsp;Ajouter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-3">
+                  <div class="row">
+                    <div class="col-md-12 mb-md-0 mb-4">
+                      <div class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
+						<textarea class="area" style="border:none "id="story" name="story" rows="2" cols="100"> Votre avis nous intéresse</textarea><i class="far fa-comment-alt" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Card"></i>
+                      </div>
+                    </div>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="row">
+        <div class="col-md-12 mt-4">
+          <div class="card">
+            <div class="card-header pb-0 px-3">
+              <h6 class="mb-0">Consulter les commentaires</h6>
+            </div>
+            <div class="card-body pt-4 p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <div ><img style="border-radius:100%" class="w-5 me-3 mb-0" src="assets/img/marie.jpg" alt="logo"><h6 style="display:inline-block" class="mb-2 text-sm">Oliver Liam</h6>
+                    </div>
+                    <span style="margin-left:70px"  class="text-dark font-weight-bold mb-2 text-xs ">2021</span>
+                    <span class="mb-2 text-sm">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</span>
+                   
+                  </div>
+                 
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
       
     </div>
+        
      
    <%@ include file="footer.jsp" %>
   </div>
